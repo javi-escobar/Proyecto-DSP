@@ -1,0 +1,246 @@
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\ProyectoCate.dll.config
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\ProyectoCate.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\ProyectoCate.pdb
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\csc.exe
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\csc.exe.config
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\csc.rsp
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\csi.exe
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\csi.exe.config
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\csi.rsp
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.AppContext.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Console.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.IO.Compression.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Net.Http.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Net.Sockets.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.ValueTuple.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Xml.XPath.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\vbc.exe
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\vbc.exe.config
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\vbc.rsp
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\VBCSCompiler.exe
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\EntityFramework.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\EntityFramework.SqlServer.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Helpers.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Mvc.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Razor.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Webpages.Deployment.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Webpages.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Webpages.Razor.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\EntityFramework.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\EntityFramework.SqlServer.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Razor.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Webpages.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Webpages.Deployment.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Webpages.Razor.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Helpers.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\System.Web.Mvc.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\es\System.Web.Razor.resources.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\es\System.Web.Webpages.resources.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\es\System.Web.Helpers.resources.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\bin\es\System.Web.Mvc.resources.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\obj\Debug\ProyectoCate.csproj.AssemblyReference.cache
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\obj\Debug\ProyectoCate.csproj.CoreCompileInputs.cache
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\obj\Debug\ProyectoCate.csproj.CopyComplete
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\obj\Debug\ProyectoCate.dll
+C:\Users\alexi\OneDrive\Documentos\Ciclo 02 23\DSP\ProyectoCate\obj\Debug\ProyectoCate.pdb
+C:\Users\Enriq\Downloads\ProyectoCate\bin\ProyectoCate.dll.config
+C:\Users\Enriq\Downloads\ProyectoCate\bin\ProyectoCate.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\ProyectoCate.pdb
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\csc.exe
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\csc.exe.config
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\csc.rsp
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\csi.exe
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\csi.exe.config
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\csi.rsp
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.AppContext.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Console.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.IO.Compression.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Net.Http.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Net.Sockets.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.ValueTuple.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Xml.XPath.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\vbc.exe
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\vbc.exe.config
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\vbc.rsp
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\VBCSCompiler.exe
+C:\Users\Enriq\Downloads\ProyectoCate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Enriq\Downloads\ProyectoCate\bin\EntityFramework.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\EntityFramework.SqlServer.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Helpers.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Mvc.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Razor.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Webpages.Deployment.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Webpages.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Webpages.Razor.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\EntityFramework.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\EntityFramework.SqlServer.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Razor.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Webpages.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Webpages.Deployment.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Webpages.Razor.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Helpers.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\System.Web.Mvc.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Enriq\Downloads\ProyectoCate\bin\es\System.Web.Razor.resources.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\es\System.Web.Webpages.resources.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\es\System.Web.Helpers.resources.dll
+C:\Users\Enriq\Downloads\ProyectoCate\bin\es\System.Web.Mvc.resources.dll
+C:\Users\Enriq\Downloads\ProyectoCate\obj\Debug\ProyectoCate.csproj.AssemblyReference.cache
+C:\Users\Enriq\Downloads\ProyectoCate\obj\Debug\ProyectoCate.csproj.CoreCompileInputs.cache
+C:\Users\Enriq\Downloads\ProyectoCate\obj\Debug\ProyectoCate.csproj.CopyComplete
+C:\Users\Enriq\Downloads\ProyectoCate\obj\Debug\ProyectoCate.dll
+C:\Users\Enriq\Downloads\ProyectoCate\obj\Debug\ProyectoCate.pdb
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\ProyectoCate.dll.config
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\ProyectoCate.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\ProyectoCate.pdb
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\csc.exe
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\csc.exe.config
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\csc.rsp
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\csi.exe
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\csi.exe.config
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\csi.rsp
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.AppContext.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Console.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.IO.Compression.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Net.Http.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Net.Sockets.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.ValueTuple.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Xml.XPath.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\vbc.exe
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\vbc.exe.config
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\vbc.rsp
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\VBCSCompiler.exe
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\EntityFramework.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\EntityFramework.SqlServer.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Helpers.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Mvc.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Razor.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Webpages.Deployment.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Webpages.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Webpages.Razor.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\EntityFramework.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\EntityFramework.SqlServer.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Razor.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Webpages.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Webpages.Deployment.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Webpages.Razor.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Helpers.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\System.Web.Mvc.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\es\System.Web.Razor.resources.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\es\System.Web.Webpages.resources.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\es\System.Web.Webpages.Deployment.resources.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\es\System.Web.Webpages.Razor.resources.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\es\System.Web.Helpers.resources.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\bin\es\System.Web.Mvc.resources.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\obj\Debug\ProyectoCate.csproj.AssemblyReference.cache
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\obj\Debug\ProyectoCate.csproj.CoreCompileInputs.cache
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\obj\Debug\ProyectoCate.csproj.CopyComplete
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\obj\Debug\ProyectoCate.dll
+C:\Users\alexi\Downloads\ProyectoCate\ProyectoCate\obj\Debug\ProyectoCate.pdb

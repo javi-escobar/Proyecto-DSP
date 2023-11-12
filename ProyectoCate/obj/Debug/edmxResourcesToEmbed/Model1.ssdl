@@ -1,0 +1,143 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MiTourModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Clientes">
+    <Key>
+      <PropertyRef Name="ClienteID" />
+    </Key>
+    <Property Name="ClienteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Telefono" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="DescuentosPorCantidad">
+    <Key>
+      <PropertyRef Name="DescuentoID" />
+    </Key>
+    <Property Name="DescuentoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="CantidadMinima" Type="int" Nullable="false" />
+    <Property Name="PorcentajeDescuento" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DescuentosPorDia">
+    <Key>
+      <PropertyRef Name="DescuentoID" />
+    </Key>
+    <Property Name="DescuentoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="DiaSemana" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="PorcentajeDescuento" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="DescuentosPorTemporada">
+    <Key>
+      <PropertyRef Name="DescuentoID" />
+    </Key>
+    <Property Name="DescuentoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Temporada" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="PorcentajeDescuento" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Reservas">
+    <Key>
+      <PropertyRef Name="ReservaID" />
+    </Key>
+    <Property Name="ReservaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="ClienteID" Type="int" />
+    <Property Name="TourID" Type="int" />
+    <Property Name="FechaReserva" Type="date" Nullable="false" />
+    <Property Name="Descuento" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Snacks">
+    <Key>
+      <PropertyRef Name="SnackID" />
+    </Key>
+    <Property Name="SnackID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Tours">
+    <Key>
+      <PropertyRef Name="TourID" />
+    </Key>
+    <Property Name="TourID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="TipoTour" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Nacional" Type="bit" Nullable="false" />
+    <Property Name="Transporte" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="FechaInicio" Type="date" Nullable="false" />
+    <Property Name="FechaFin" Type="date" Nullable="false" />
+    <Property Name="CantidadPersonas" Type="int" Nullable="false" />
+    <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Usuarios">
+    <Key>
+      <PropertyRef Name="UsuarioID" />
+    </Key>
+    <Property Name="UsuarioID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Correo" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="Clave" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ViajesRealizados">
+    <Key>
+      <PropertyRef Name="ViajeID" />
+    </Key>
+    <Property Name="ViajeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TourID" Type="int" />
+    <Property Name="FechaViaje" Type="date" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Reservas__Client__3B75D760">
+    <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+    <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Clientes">
+        <PropertyRef Name="ClienteID" />
+      </Principal>
+      <Dependent Role="Reservas">
+        <PropertyRef Name="ClienteID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Reservas__TourID__3C69FB99">
+    <End Role="Tours" Type="Self.Tours" Multiplicity="0..1" />
+    <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tours">
+        <PropertyRef Name="TourID" />
+      </Principal>
+      <Dependent Role="Reservas">
+        <PropertyRef Name="TourID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__ViajesRea__TourI__412EB0B6">
+    <End Role="Tours" Type="Self.Tours" Multiplicity="0..1" />
+    <End Role="ViajesRealizados" Type="Self.ViajesRealizados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tours">
+        <PropertyRef Name="TourID" />
+      </Principal>
+      <Dependent Role="ViajesRealizados">
+        <PropertyRef Name="TourID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="MiTourModelStoreContainer">
+    <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DescuentosPorCantidad" EntityType="Self.DescuentosPorCantidad" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DescuentosPorDia" EntityType="Self.DescuentosPorDia" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="DescuentosPorTemporada" EntityType="Self.DescuentosPorTemporada" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Reservas" EntityType="Self.Reservas" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Snacks" EntityType="Self.Snacks" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tours" EntityType="Self.Tours" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ViajesRealizados" EntityType="Self.ViajesRealizados" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK__Reservas__Client__3B75D760" Association="Self.FK__Reservas__Client__3B75D760">
+      <End Role="Clientes" EntitySet="Clientes" />
+      <End Role="Reservas" EntitySet="Reservas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Reservas__TourID__3C69FB99" Association="Self.FK__Reservas__TourID__3C69FB99">
+      <End Role="Tours" EntitySet="Tours" />
+      <End Role="Reservas" EntitySet="Reservas" />
+    </AssociationSet>
+    <AssociationSet Name="FK__ViajesRea__TourI__412EB0B6" Association="Self.FK__ViajesRea__TourI__412EB0B6">
+      <End Role="Tours" EntitySet="Tours" />
+      <End Role="ViajesRealizados" EntitySet="ViajesRealizados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

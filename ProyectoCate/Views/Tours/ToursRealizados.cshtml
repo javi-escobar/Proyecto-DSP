@@ -1,0 +1,25 @@
+﻿@model List<ProyectoCate.Models.Tour>
+
+<h2>Tours Realizados</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Fecha de Inicio</th>
+        <th>Fecha de Fin</th>
+        <th>Precio</th>
+        <th>Cantidad de Personas</th>
+    </tr>
+    @foreach (var tour in Model)
+    {
+        <tr>
+            <td>@tour.TourID</td>
+            <td>@tour.Nombre</td>
+            <td>@tour.FechaInicio.ToString("yyyy-MM-dd")</td>
+            <td>@tour.FechaFin.ToString("yyyy-MM-dd")</td>
+            <td>@tour.Precio</td>
+            <td>@tour.CantidadPersonas</td>
+        </tr>
+    }
+</table>

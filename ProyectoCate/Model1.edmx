@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="MiTourModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="ClienteID" />
+          </Key>
+          <Property Name="ClienteID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Email" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Telefono" Type="nvarchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="DescuentosPorCantidad">
+          <Key>
+            <PropertyRef Name="DescuentoID" />
+          </Key>
+          <Property Name="DescuentoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="CantidadMinima" Type="int" Nullable="false" />
+          <Property Name="PorcentajeDescuento" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DescuentosPorDia">
+          <Key>
+            <PropertyRef Name="DescuentoID" />
+          </Key>
+          <Property Name="DescuentoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="DiaSemana" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="PorcentajeDescuento" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DescuentosPorTemporada">
+          <Key>
+            <PropertyRef Name="DescuentoID" />
+          </Key>
+          <Property Name="DescuentoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Temporada" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="PorcentajeDescuento" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Reservas">
+          <Key>
+            <PropertyRef Name="ReservaID" />
+          </Key>
+          <Property Name="ReservaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ClienteID" Type="int" />
+          <Property Name="TourID" Type="int" />
+          <Property Name="FechaReserva" Type="date" Nullable="false" />
+          <Property Name="Descuento" Type="decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Snacks">
+          <Key>
+            <PropertyRef Name="SnackID" />
+          </Key>
+          <Property Name="SnackID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tours">
+          <Key>
+            <PropertyRef Name="TourID" />
+          </Key>
+          <Property Name="TourID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Nombre" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="TipoTour" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="Nacional" Type="bit" Nullable="false" />
+          <Property Name="Transporte" Type="nvarchar" MaxLength="50" Nullable="false" />
+          <Property Name="FechaInicio" Type="date" Nullable="false" />
+          <Property Name="FechaFin" Type="date" Nullable="false" />
+          <Property Name="CantidadPersonas" Type="int" Nullable="false" />
+          <Property Name="Precio" Type="decimal" Precision="10" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="UsuarioID" />
+          </Key>
+          <Property Name="UsuarioID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="Correo" Type="nvarchar" MaxLength="100" Nullable="false" />
+          <Property Name="Clave" Type="nvarchar" MaxLength="500" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ViajesRealizados">
+          <Key>
+            <PropertyRef Name="ViajeID" />
+          </Key>
+          <Property Name="ViajeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="TourID" Type="int" />
+          <Property Name="FechaViaje" Type="date" Nullable="false" />
+        </EntityType>
+        <Association Name="FK__Reservas__Client__3B75D760">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteID" />
+            </Principal>
+            <Dependent Role="Reservas">
+              <PropertyRef Name="ClienteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Reservas__TourID__3C69FB99">
+          <End Role="Tours" Type="Self.Tours" Multiplicity="0..1" />
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tours">
+              <PropertyRef Name="TourID" />
+            </Principal>
+            <Dependent Role="Reservas">
+              <PropertyRef Name="TourID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ViajesRea__TourI__412EB0B6">
+          <End Role="Tours" Type="Self.Tours" Multiplicity="0..1" />
+          <End Role="ViajesRealizados" Type="Self.ViajesRealizados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tours">
+              <PropertyRef Name="TourID" />
+            </Principal>
+            <Dependent Role="ViajesRealizados">
+              <PropertyRef Name="TourID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MiTourModelStoreContainer">
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DescuentosPorCantidad" EntityType="Self.DescuentosPorCantidad" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DescuentosPorDia" EntityType="Self.DescuentosPorDia" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="DescuentosPorTemporada" EntityType="Self.DescuentosPorTemporada" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Reservas" EntityType="Self.Reservas" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Snacks" EntityType="Self.Snacks" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Tours" EntityType="Self.Tours" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ViajesRealizados" EntityType="Self.ViajesRealizados" Schema="dbo" store:Type="Tables" />
+          <AssociationSet Name="FK__Reservas__Client__3B75D760" Association="Self.FK__Reservas__Client__3B75D760">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Reservas" EntitySet="Reservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Reservas__TourID__3C69FB99" Association="Self.FK__Reservas__TourID__3C69FB99">
+            <End Role="Tours" EntitySet="Tours" />
+            <End Role="Reservas" EntitySet="Reservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ViajesRea__TourI__412EB0B6" Association="Self.FK__ViajesRea__TourI__412EB0B6">
+            <End Role="Tours" EntitySet="Tours" />
+            <End Role="ViajesRealizados" EntitySet="ViajesRealizados" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="MiTourModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Clientes">
+          <Key>
+            <PropertyRef Name="ClienteID" />
+          </Key>
+          <Property Name="ClienteID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Telefono" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+          <NavigationProperty Name="Reservas" Relationship="Self.FK__Reservas__Client__3B75D760" FromRole="Clientes" ToRole="Reservas" />
+        </EntityType>
+        <EntityType Name="DescuentosPorCantidad">
+          <Key>
+            <PropertyRef Name="DescuentoID" />
+          </Key>
+          <Property Name="DescuentoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="CantidadMinima" Type="Int32" Nullable="false" />
+          <Property Name="PorcentajeDescuento" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DescuentosPorDia">
+          <Key>
+            <PropertyRef Name="DescuentoID" />
+          </Key>
+          <Property Name="DescuentoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="DiaSemana" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PorcentajeDescuento" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DescuentosPorTemporada">
+          <Key>
+            <PropertyRef Name="DescuentoID" />
+          </Key>
+          <Property Name="DescuentoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Temporada" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="PorcentajeDescuento" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Reservas">
+          <Key>
+            <PropertyRef Name="ReservaID" />
+          </Key>
+          <Property Name="ReservaID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ClienteID" Type="Int32" />
+          <Property Name="TourID" Type="Int32" />
+          <Property Name="FechaReserva" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="Descuento" Type="Decimal" Precision="5" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Clientes" Relationship="Self.FK__Reservas__Client__3B75D760" FromRole="Reservas" ToRole="Clientes" />
+          <NavigationProperty Name="Tours" Relationship="Self.FK__Reservas__TourID__3C69FB99" FromRole="Reservas" ToRole="Tours" />
+        </EntityType>
+        <EntityType Name="Snacks">
+          <Key>
+            <PropertyRef Name="SnackID" />
+          </Key>
+          <Property Name="SnackID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Tours">
+          <Key>
+            <PropertyRef Name="TourID" />
+          </Key>
+          <Property Name="TourID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Nombre" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TipoTour" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Nacional" Type="Boolean" Nullable="false" />
+          <Property Name="Transporte" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="FechaInicio" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="FechaFin" Type="DateTime" Nullable="false" Precision="0" />
+          <Property Name="CantidadPersonas" Type="Int32" Nullable="false" />
+          <Property Name="Precio" Type="Decimal" Precision="10" Scale="2" Nullable="false" />
+          <NavigationProperty Name="Reservas" Relationship="Self.FK__Reservas__TourID__3C69FB99" FromRole="Tours" ToRole="Reservas" />
+          <NavigationProperty Name="ViajesRealizados" Relationship="Self.FK__ViajesRea__TourI__412EB0B6" FromRole="Tours" ToRole="ViajesRealizados" />
+        </EntityType>
+        <EntityType Name="Usuarios">
+          <Key>
+            <PropertyRef Name="UsuarioID" />
+          </Key>
+          <Property Name="UsuarioID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Correo" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Clave" Type="String" MaxLength="500" FixedLength="false" Unicode="true" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ViajesRealizados">
+          <Key>
+            <PropertyRef Name="ViajeID" />
+          </Key>
+          <Property Name="ViajeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="TourID" Type="Int32" />
+          <Property Name="FechaViaje" Type="DateTime" Nullable="false" Precision="0" />
+          <NavigationProperty Name="Tours" Relationship="Self.FK__ViajesRea__TourI__412EB0B6" FromRole="ViajesRealizados" ToRole="Tours" />
+        </EntityType>
+        <Association Name="FK__Reservas__Client__3B75D760">
+          <End Role="Clientes" Type="Self.Clientes" Multiplicity="0..1" />
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Clientes">
+              <PropertyRef Name="ClienteID" />
+            </Principal>
+            <Dependent Role="Reservas">
+              <PropertyRef Name="ClienteID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Reservas__TourID__3C69FB99">
+          <End Role="Tours" Type="Self.Tours" Multiplicity="0..1" />
+          <End Role="Reservas" Type="Self.Reservas" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tours">
+              <PropertyRef Name="TourID" />
+            </Principal>
+            <Dependent Role="Reservas">
+              <PropertyRef Name="TourID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__ViajesRea__TourI__412EB0B6">
+          <End Role="Tours" Type="Self.Tours" Multiplicity="0..1" />
+          <End Role="ViajesRealizados" Type="Self.ViajesRealizados" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Tours">
+              <PropertyRef Name="TourID" />
+            </Principal>
+            <Dependent Role="ViajesRealizados">
+              <PropertyRef Name="TourID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <EntityContainer Name="MiTourEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Clientes" EntityType="Self.Clientes" />
+          <EntitySet Name="DescuentosPorCantidad" EntityType="Self.DescuentosPorCantidad" />
+          <EntitySet Name="DescuentosPorDia" EntityType="Self.DescuentosPorDia" />
+          <EntitySet Name="DescuentosPorTemporada" EntityType="Self.DescuentosPorTemporada" />
+          <EntitySet Name="Reservas" EntityType="Self.Reservas" />
+          <EntitySet Name="Snacks" EntityType="Self.Snacks" />
+          <EntitySet Name="Tours" EntityType="Self.Tours" />
+          <EntitySet Name="Usuarios" EntityType="Self.Usuarios" />
+          <EntitySet Name="ViajesRealizados" EntityType="Self.ViajesRealizados" />
+          <AssociationSet Name="FK__Reservas__Client__3B75D760" Association="Self.FK__Reservas__Client__3B75D760">
+            <End Role="Clientes" EntitySet="Clientes" />
+            <End Role="Reservas" EntitySet="Reservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Reservas__TourID__3C69FB99" Association="Self.FK__Reservas__TourID__3C69FB99">
+            <End Role="Tours" EntitySet="Tours" />
+            <End Role="Reservas" EntitySet="Reservas" />
+          </AssociationSet>
+          <AssociationSet Name="FK__ViajesRea__TourI__412EB0B6" Association="Self.FK__ViajesRea__TourI__412EB0B6">
+            <End Role="Tours" EntitySet="Tours" />
+            <End Role="ViajesRealizados" EntitySet="ViajesRealizados" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="MiTourModelStoreContainer" CdmEntityContainer="MiTourEntities">
+          <EntitySetMapping Name="Clientes">
+            <EntityTypeMapping TypeName="MiTourModel.Clientes">
+              <MappingFragment StoreEntitySet="Clientes">
+                <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DescuentosPorCantidad">
+            <EntityTypeMapping TypeName="MiTourModel.DescuentosPorCantidad">
+              <MappingFragment StoreEntitySet="DescuentosPorCantidad">
+                <ScalarProperty Name="DescuentoID" ColumnName="DescuentoID" />
+                <ScalarProperty Name="CantidadMinima" ColumnName="CantidadMinima" />
+                <ScalarProperty Name="PorcentajeDescuento" ColumnName="PorcentajeDescuento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DescuentosPorDia">
+            <EntityTypeMapping TypeName="MiTourModel.DescuentosPorDia">
+              <MappingFragment StoreEntitySet="DescuentosPorDia">
+                <ScalarProperty Name="DescuentoID" ColumnName="DescuentoID" />
+                <ScalarProperty Name="DiaSemana" ColumnName="DiaSemana" />
+                <ScalarProperty Name="PorcentajeDescuento" ColumnName="PorcentajeDescuento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DescuentosPorTemporada">
+            <EntityTypeMapping TypeName="MiTourModel.DescuentosPorTemporada">
+              <MappingFragment StoreEntitySet="DescuentosPorTemporada">
+                <ScalarProperty Name="DescuentoID" ColumnName="DescuentoID" />
+                <ScalarProperty Name="Temporada" ColumnName="Temporada" />
+                <ScalarProperty Name="PorcentajeDescuento" ColumnName="PorcentajeDescuento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Reservas">
+            <EntityTypeMapping TypeName="MiTourModel.Reservas">
+              <MappingFragment StoreEntitySet="Reservas">
+                <ScalarProperty Name="ReservaID" ColumnName="ReservaID" />
+                <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+                <ScalarProperty Name="TourID" ColumnName="TourID" />
+                <ScalarProperty Name="FechaReserva" ColumnName="FechaReserva" />
+                <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Snacks">
+            <EntityTypeMapping TypeName="MiTourModel.Snacks">
+              <MappingFragment StoreEntitySet="Snacks">
+                <ScalarProperty Name="SnackID" ColumnName="SnackID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Tours">
+            <EntityTypeMapping TypeName="MiTourModel.Tours">
+              <MappingFragment StoreEntitySet="Tours">
+                <ScalarProperty Name="TourID" ColumnName="TourID" />
+                <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+                <ScalarProperty Name="TipoTour" ColumnName="TipoTour" />
+                <ScalarProperty Name="Nacional" ColumnName="Nacional" />
+                <ScalarProperty Name="Transporte" ColumnName="Transporte" />
+                <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+                <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+                <ScalarProperty Name="CantidadPersonas" ColumnName="CantidadPersonas" />
+                <ScalarProperty Name="Precio" ColumnName="Precio" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Usuarios">
+            <EntityTypeMapping TypeName="MiTourModel.Usuarios">
+              <MappingFragment StoreEntitySet="Usuarios">
+                <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+                <ScalarProperty Name="Correo" ColumnName="Correo" />
+                <ScalarProperty Name="Clave" ColumnName="Clave" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ViajesRealizados">
+            <EntityTypeMapping TypeName="MiTourModel.ViajesRealizados">
+              <MappingFragment StoreEntitySet="ViajesRealizados">
+                <ScalarProperty Name="ViajeID" ColumnName="ViajeID" />
+                <ScalarProperty Name="TourID" ColumnName="TourID" />
+                <ScalarProperty Name="FechaViaje" ColumnName="FechaViaje" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="false" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Ninguno" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

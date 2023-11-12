@@ -1,0 +1,91 @@
+﻿@model ProyectoCate.Tours
+
+@{
+    ViewBag.Title = "Eliminar Tour";
+}
+
+
+    <title>Eliminar Tour</title>
+
+<body>
+    <h3>¿Desea eliminar este Tour?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nombre)
+            </dd>
+    
+            <dt>
+                Tipo de Tour
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.TipoTour)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Nacional)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Nacional)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Transporte)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Transporte)
+            </dd>
+    
+            <dt>
+                Fecha de Inicio
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FechaInicio)
+            </dd>
+    
+            <dt>
+               Fecha de Fin
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.FechaFin)
+            </dd>
+    
+            <dt>
+               Cantidad de Personas
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.CantidadPersonas)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.Precio)
+            </dt>
+    
+            <dd>
+                @Html.DisplayFor(model => model.Precio)
+            </dd>
+    
+        </dl>
+    
+        @using (Html.BeginForm()) {
+            @Html.AntiForgeryToken()
+    
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-default" /> |
+                @Html.ActionLink("Volver a la Lista", "Index")
+            </div>
+        }
+    </div>
+</body>
+

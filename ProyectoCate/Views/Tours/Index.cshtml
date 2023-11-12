@@ -1,0 +1,83 @@
+﻿@model IEnumerable<ProyectoCate.Tours>
+
+@{
+    ViewBag.Title = "Tours";
+}
+
+    <title>Tours</title>
+
+    <body>
+        <h2>Tours</h2>
+        <table class="table">
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Nombre)
+                </th>
+                <th>
+                    Tipo de Tour
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Transporte)
+                </th>
+                <th>
+                    Fecha de Inicio
+                </th>
+                <th>
+                    Fecha de Fin
+                </th>
+                <th>
+                    Cantidad de Personas
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Precio)
+                </th>
+                <th></th>
+            </tr>
+
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Nombre)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TipoTour)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Transporte)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaInicio)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FechaFin)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.CantidadPersonas)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Precio)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Editar", "Edit", new { id = item.TourID }) |
+                        @Html.ActionLink("Detalles", "Details", new { id = item.TourID }) |
+                        @Html.ActionLink("Eliminar", "Delete", new { id = item.TourID })
+                    </td>
+                </tr>
+            }
+
+        </table>
+        <h4 style="font-weight: bold">Información de Tours</h4>
+        <table class="table">
+            <tr>
+                <th>@Html.ActionLink("Tours Dipsonibles", "ToursDisponibles")</th>
+                <th>@Html.ActionLink("Tours Realizados", "ToursRealizados")</th>
+                <th>@Html.ActionLink("Tours con Mayor Demanada", "ToursConMayorCantidadPersonas")</th>
+                <th> @Html.ActionLink("Tours con Menor Demanada", "ToursConMenorCantidadPersonas")</th>
+            </tr>
+        </table>
+        <p>
+            @Html.ActionLink("Crear Tour", "Create")
+        </p>
+    </body>
+

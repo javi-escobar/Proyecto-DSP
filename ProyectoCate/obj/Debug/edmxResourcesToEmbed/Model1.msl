@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MiTourModelStoreContainer" CdmEntityContainer="MiTourEntities">
+    <EntitySetMapping Name="Clientes">
+      <EntityTypeMapping TypeName="MiTourModel.Clientes">
+        <MappingFragment StoreEntitySet="Clientes">
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DescuentosPorCantidad">
+      <EntityTypeMapping TypeName="MiTourModel.DescuentosPorCantidad">
+        <MappingFragment StoreEntitySet="DescuentosPorCantidad">
+          <ScalarProperty Name="DescuentoID" ColumnName="DescuentoID" />
+          <ScalarProperty Name="CantidadMinima" ColumnName="CantidadMinima" />
+          <ScalarProperty Name="PorcentajeDescuento" ColumnName="PorcentajeDescuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DescuentosPorDia">
+      <EntityTypeMapping TypeName="MiTourModel.DescuentosPorDia">
+        <MappingFragment StoreEntitySet="DescuentosPorDia">
+          <ScalarProperty Name="DescuentoID" ColumnName="DescuentoID" />
+          <ScalarProperty Name="DiaSemana" ColumnName="DiaSemana" />
+          <ScalarProperty Name="PorcentajeDescuento" ColumnName="PorcentajeDescuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DescuentosPorTemporada">
+      <EntityTypeMapping TypeName="MiTourModel.DescuentosPorTemporada">
+        <MappingFragment StoreEntitySet="DescuentosPorTemporada">
+          <ScalarProperty Name="DescuentoID" ColumnName="DescuentoID" />
+          <ScalarProperty Name="Temporada" ColumnName="Temporada" />
+          <ScalarProperty Name="PorcentajeDescuento" ColumnName="PorcentajeDescuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservas">
+      <EntityTypeMapping TypeName="MiTourModel.Reservas">
+        <MappingFragment StoreEntitySet="Reservas">
+          <ScalarProperty Name="ReservaID" ColumnName="ReservaID" />
+          <ScalarProperty Name="ClienteID" ColumnName="ClienteID" />
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="FechaReserva" ColumnName="FechaReserva" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Snacks">
+      <EntityTypeMapping TypeName="MiTourModel.Snacks">
+        <MappingFragment StoreEntitySet="Snacks">
+          <ScalarProperty Name="SnackID" ColumnName="SnackID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tours">
+      <EntityTypeMapping TypeName="MiTourModel.Tours">
+        <MappingFragment StoreEntitySet="Tours">
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="Nombre" ColumnName="Nombre" />
+          <ScalarProperty Name="TipoTour" ColumnName="TipoTour" />
+          <ScalarProperty Name="Nacional" ColumnName="Nacional" />
+          <ScalarProperty Name="Transporte" ColumnName="Transporte" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="FechaFin" ColumnName="FechaFin" />
+          <ScalarProperty Name="CantidadPersonas" ColumnName="CantidadPersonas" />
+          <ScalarProperty Name="Precio" ColumnName="Precio" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Usuarios">
+      <EntityTypeMapping TypeName="MiTourModel.Usuarios">
+        <MappingFragment StoreEntitySet="Usuarios">
+          <ScalarProperty Name="UsuarioID" ColumnName="UsuarioID" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Clave" ColumnName="Clave" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ViajesRealizados">
+      <EntityTypeMapping TypeName="MiTourModel.ViajesRealizados">
+        <MappingFragment StoreEntitySet="ViajesRealizados">
+          <ScalarProperty Name="ViajeID" ColumnName="ViajeID" />
+          <ScalarProperty Name="TourID" ColumnName="TourID" />
+          <ScalarProperty Name="FechaViaje" ColumnName="FechaViaje" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

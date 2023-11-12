@@ -1,0 +1,20 @@
+﻿@model List<ProyectoCate.Models.Tour>
+
+<h2>Tours con Menor Cantidad de Personas</h2>
+
+<table class="table">
+    <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Cantidad de Personas</th>
+    </tr>
+    @foreach (var tour in Model)
+    {
+        <tr>
+            <td>@tour.TourID</td>
+            <td>@tour.Nombre</td>
+            <td>@tour.CantidadPersonas</td>
+        </tr>
+    }
+</table>
+

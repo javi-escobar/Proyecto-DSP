@@ -1,0 +1,63 @@
+﻿@{
+    ViewBag.Title = "Clientes con más reservas";
+}
+
+<h2>Clientes con más reservas</h2>
+
+@using (Html.BeginForm("VerClientesConMasReservas", "Tours", FormMethod.Post, new { onsubmit = "return validarFechas();" }))
+{
+    <div>
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="date" name="fechaInicio" id="fechaInicio" required>
+    </div>
+
+    <div>
+        <label for="fechaFin">Fecha de Fin:</label>
+        <input type="date" name="fechaFin" id="fechaFin" required>
+    </div>
+
+    <button type="submit">Consultar</button>
+}
+
+@if (ViewBag.ClientesConMasReservas != null)
+{
+    <p>Período: @ViewBag.FechaInicio.ToShortDateString() - @ViewBag.FechaFin.ToShortDateString()</p>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Cliente ID</th>
+                <th>Nombre</th>
+                <th>Cantidad de Reservas</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var cliente in ViewBag.ClientesConMasReservas)
+            {
+                <tr>
+                    <td>@cliente.ClienteID</td>
+                    <td>@cliente.Nombre</td>
+                    <td>@cliente.CantidadDeReservas</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>No hay resultados para el período seleccionado.</p>
+}
+
+<script>
+    function validarFechas() {
+        var fechaInicio = new Date(document.getElementById('fechaInicio').value);
+        var fechaFin = new Date(document.getElementById('fechaFin').value);
+
+        if (fechaInicio >= fechaFin) {
+            alert('La fecha de inicio debe ser menor que la fecha de fin.');
+            return false;
+        }
+
+        return true;
+    }
+</script>

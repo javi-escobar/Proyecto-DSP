@@ -1,0 +1,59 @@
+﻿@using (Html.BeginForm())
+{
+    <div>
+        <label for="clienteID">Cliente ID:</label>
+        <input type="text" name="clienteID" required>
+    </div>
+
+    <div>
+        <label for="fechaInicio">Fecha de Inicio:</label>
+        <input type="date" name="fechaInicio" id="fechaInicio" required>
+    </div>
+
+    <div>
+        <label for="fechaFin">Fecha de Fin:</label>
+        <input type="date" name="fechaFin" id="fechaFin" required>
+    </div>
+
+    <button type="submit">Consultar</button>
+}
+@if (ViewBag.MensajeError != null)
+{
+    <p style="color: red;">@ViewBag.MensajeError</p>
+}
+@if (ViewBag.CantidadDeReservas != null)
+{
+    <p>Cliente ID: @ViewBag.ClienteID</p>
+    <p>Fecha de Inicio: @ViewBag.FechaInicio</p>
+    <p>Fecha de Fin: @ViewBag.FechaFin</p>
+
+    if (ViewBag.CantidadDeReservas == 0)
+    {
+        <p>No se encontraron reservas para el cliente en el rango de fechas especificado.</p>
+    }
+    else
+    {
+        <p>Cantidad de Reservas: @ViewBag.CantidadDeReservas</p>
+    }
+}
+
+<script>
+    document.getElementById('fechaInicio').addEventListener('input', function () {
+        ValidarFechas();
+    });
+
+    document.getElementById('fechaFin').addEventListener('input', function () {
+        ValidarFechas();
+    });
+
+    function ValidarFechas() {
+        var fechaInicio = new Date(document.getElementById('fechaInicio').value);
+        var fechaFin = new Date(document.getElementById('fechaFin').value);
+
+        if (fechaInicio >= fechaFin) {
+            alert('La fecha de inicio debe ser menor que la fecha de fin.');
+            document.getElementById('fechaInicio').value = '';
+            document.getElementById('fechaFin').value = '';
+        }
+    }
+</script>

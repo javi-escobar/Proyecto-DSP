@@ -1,0 +1,58 @@
+﻿@model ProyectoCate.Reservas
+
+@{
+    ViewBag.Title = "Eliminar Reserva";
+}
+<title>Eliminar Reservas</title>
+
+<body>
+    <h3>¿Desea eliminar esta reserva?</h3>
+    <div>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                Fecha de Reserva
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.FechaReserva)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Descuento)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Descuento)
+            </dd>
+
+            <dt>
+                Nombre del Cliente
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Clientes.Nombre)
+            </dd>
+
+            <dt>
+                Tour
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Tours.Nombre)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="form-actions no-color">
+                <input type="submit" value="Eliminar" class="btn btn-default" /> |
+                @Html.ActionLink("Volver a la Lista", "Index")
+            </div>
+        }
+    </div>
+</body>
+

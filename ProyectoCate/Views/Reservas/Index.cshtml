@@ -1,0 +1,59 @@
+﻿@model IEnumerable<ProyectoCate.Reservas>
+
+@{
+    ViewBag.Title = "Reservas Registradas";
+}
+
+
+<h2>Reservas Registradas</h2>
+<table class="table">
+    <tr>
+        <th>
+            Fecha de Reserva
+        </th>
+        <th>
+            Nombre del Cliente
+        </th>
+        <th>
+            Tour
+        </th>
+        <th>
+            Descuento
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaReserva)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Clientes.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tours.Nombre)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Descuento)
+            </td>
+            <td>
+                @Html.ActionLink("Editar", "Edit", new { id = item.ReservaID }) |
+                @Html.ActionLink("Detalles", "Details", new { id = item.ReservaID }) |
+                @Html.ActionLink("Eliminar", "Delete", new { id = item.ReservaID })
+            </td>
+        </tr>
+    }
+
+</table>
+<h4 style="font-weight: bold">Información de Clientes</h4>
+<table class="table">
+    <tr>
+        <th> @Html.ActionLink("Cantidad de Reservas por Cliente", "CantidadDeReservasPorCliente", "Tours")</th>
+        <th>  @Html.ActionLink("Clientes que más han viajado", "VerClientesConMasReservas", "Tours")</th>
+    </tr>
+</table>
+<p>
+    @Html.ActionLink("Crear Reserva", "Create")
+</p>
